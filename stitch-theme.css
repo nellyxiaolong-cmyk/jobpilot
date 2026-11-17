@@ -1,0 +1,90 @@
+/* JobPilot visual tokens adapted from the selected Stitch project.
+   Presentation only: the existing page structure, controls and data remain in app.js. */
+:root{
+  --ink:#1a1b22;
+  --muted:#777587;
+  --line:#e8e7f1;
+  --bg:#fbf8ff;
+  --blue:#4f46e5;
+  --green:#10b981;
+  --orange:#a05b1d;
+  --violet:#6257d9;
+  --stitch-primary:#4f46e5;
+  --stitch-surface:#fbf8ff;
+  --stitch-low:#f4f2fd;
+  --stitch-mid:#eeedf7;
+  --stitch-outline:#c7c4d8;
+}
+body{background:var(--stitch-surface);color:var(--ink);font-family:'Plus Jakarta Sans','Noto Sans SC',sans-serif}
+.brand-name,.welcome h1,.page-heading h1,.onboarding-card h1,.preview-heading h2,.insight-hero h2{font-family:'Space Grotesk','Noto Sans SC',sans-serif}
+body:not(.needs-resume) .main{background:var(--stitch-surface)}
+body:not(.needs-resume) .sidebar{background:#fff;border-right-color:var(--line)}
+body:not(.needs-resume) .workspace{background:var(--stitch-low);border-color:var(--stitch-mid);color:#656477}
+body:not(.needs-resume) .workspace{background:transparent;border-color:transparent}
+body:not(.needs-resume) .sidebar .nav{color:#5b5a6a}
+body:not(.needs-resume) .sidebar .nav>span:first-child{color:#858398}
+body:not(.needs-resume) .sidebar .nav:hover{background:#f8f7fc;color:var(--stitch-primary)}
+body:not(.needs-resume) .sidebar .nav.active{background:#efedff;color:var(--stitch-primary)}
+body:not(.needs-resume) .sidebar .nav.active>span:first-child{color:var(--stitch-primary)}
+body:not(.needs-resume) .sidebar .nav.active::before{background:var(--stitch-primary)}
+body:not(.needs-resume).sidebar-collapsed .resume-update-icon{transform:translateY(5px)}
+body:not(.needs-resume) .sidebar .nav b{color:#777587}
+body:not(.needs-resume) .resume-summary{background:#f7f6fc;border-color:#e8e7f1}
+body:not(.needs-resume) .resume-update{color:var(--stitch-primary)}
+body:not(.needs-resume) .brand-mark,.onboarding-mark{background:var(--stitch-primary)}
+body:not(.needs-resume) .page{max-width:1180px}
+body:not(.needs-resume) .welcome h1,body:not(.needs-resume) .page-heading h1{font-size:24px;letter-spacing:-.45px;color:#1a1b22}
+body:not(.needs-resume) .eyebrow{color:#777587;letter-spacing:.11em}
+body:not(.needs-resume) .welcome p,body:not(.needs-resume) .page-heading p{color:#696878}
+body:not(.needs-resume) .primary{background:var(--stitch-primary);border-radius:7px;color:#fff}
+body:not(.needs-resume) .primary:hover{background:#281bb5}
+body:not(.needs-resume) .stats article,body:not(.needs-resume) .panel,body:not(.needs-resume) .app-card,body:not(.needs-resume) .company-table-wrap{background:#fff;border-color:var(--line);border-radius:9px}
+body:not(.needs-resume) .stats article>strong{font-family:'Space Grotesk','Noto Sans SC',sans-serif;color:#1a1b22}
+body:not(.needs-resume) .stat-head{color:#5c5b6c}
+body:not(.needs-resume) .blue{background:#efedff;color:var(--stitch-primary)}
+body:not(.needs-resume) .violet{background:#f1efff;color:#6257d9}
+body:not(.needs-resume) .green{background:#e8f6ef;color:#10b981}
+body:not(.needs-resume) .panel-title h2,body:not(.needs-resume) .panel h2{color:#22222c}
+body:not(.needs-resume) .panel-title p,body:not(.needs-resume) .muted{color:#777587}
+body:not(.needs-resume) .stage-bar{background:#eeedf7}
+body:not(.needs-resume) .stage-bar i,body:not(.needs-resume) .app-progress i{background:var(--stitch-primary)}
+body:not(.needs-resume) .logo{background:#efedff;color:var(--stitch-primary)}
+body:not(.needs-resume) .badge,body:not(.needs-resume) .status-pill.in-progress{background:#efedff;color:var(--stitch-primary)}
+body:not(.needs-resume) .badge.offer{background:#e8f6ef;color:#10b981}
+body:not(.needs-resume) .company-table th{background:#f7f6fc;color:#696878;border-color:var(--line)}
+body:not(.needs-resume) .company-table td{border-color:#f0eff6}
+body:not(.needs-resume) .company-table tbody tr:hover{background:#faf9ff}
+body:not(.needs-resume) .toolbar{border-color:var(--line)}
+body:not(.needs-resume) .tab.active{color:var(--stitch-primary);border-bottom-color:var(--stitch-primary)}
+body:not(.needs-resume) .tab span{background:var(--stitch-low);color:#625f76}
+body:not(.needs-resume) .calendar-grid button.has-event{background:#efedff;color:var(--stitch-primary);box-shadow:inset 0 0 0 1px #d9d5ff}
+body:not(.needs-resume) .calendar-grid button.has-event:after{background:var(--stitch-primary)}
+body:not(.needs-resume) .calendar-grid button.selected{background:var(--stitch-primary);color:#fff}
+body:not(.needs-resume) .insight-hero{background:#f4f2fd;border-color:var(--line)}
+body:not(.needs-resume) .ring{border-color:#dedaff;color:var(--stitch-primary)}
+body:not(.needs-resume) .rec-card{background:#f7f6fc;border-color:#e8e7f1}
+body:not(.needs-resume) .text-btn,body:not(.needs-resume) .event-info .meeting-url{color:var(--stitch-primary)}
+body:not(.needs-resume) .outline{color:#575668;border-color:#dedce9}
+body:not(.needs-resume) .outline:hover{background:#f7f6fc;border-color:#c7c4d8;color:var(--stitch-primary)}
+body:not(.needs-resume) .field input:focus,body:not(.needs-resume) .field textarea:focus{border-color:#746bea;box-shadow:0 0 0 3px #4f46e514}
+body:not(.needs-resume) .empty-state strong{color:#353442}
+/* Preserve the original calendar layout: calendar and day details stack vertically. */
+body:not(.needs-resume) .calendar-layout{grid-template-columns:minmax(0,1fr);gap:0}
+body.needs-resume .main{background:var(--stitch-surface)}
+body.needs-resume .onboarding-card{border-color:var(--line);border-radius:12px;box-shadow:0 12px 36px #211b5010}
+body.needs-resume .onboarding-card h1{font-size:27px;color:#1a1b22}
+body.needs-resume .onboarding-card .eyebrow{color:#777587}
+body.needs-resume .onboarding-intro{color:#696878}
+body.needs-resume .resume-drop{background:#f8f7fc;border-color:#c7c4d8;border-radius:9px}
+body.needs-resume .resume-drop:hover{background:#f4f2fd;border-color:#746bea}
+body.needs-resume .resume-upload-icon{background:#efedff;color:var(--stitch-primary);border-radius:9px}
+body.needs-resume .resume-drop strong{color:#393845}
+body.needs-resume .onboarding-role input{border-color:#dedce9;border-radius:7px}
+body.needs-resume .onboarding-submit{background:var(--stitch-primary);border-radius:7px;box-shadow:none}
+body.needs-resume .onboarding-preview{background:#f4f2fd;border:1px solid var(--line);border-radius:11px;color:#1a1b22}
+body.needs-resume .onboarding-preview:before,body.needs-resume .onboarding-preview:after{display:none}
+body.needs-resume .preview-stats>div,body.needs-resume .preview-panel,body.needs-resume .preview-next{background:#fff;border-color:#e8e7f1;border-radius:9px;box-shadow:none}
+body.needs-resume .preview-stats strong{font-family:'Space Grotesk','Noto Sans SC',sans-serif;color:#1a1b22}
+body.needs-resume .preview-bars b{background:var(--stitch-primary)}
+body.needs-resume .preview-calendar,body.needs-resume .preview-avatar{background:#efedff;color:var(--stitch-primary);box-shadow:none;border-radius:8px}
+@media(max-width:700px){body:not(.needs-resume) .welcome h1,body:not(.needs-resume) .page-heading h1{font-size:20px}body.needs-resume .onboarding-card h1{font-size:23px}}
