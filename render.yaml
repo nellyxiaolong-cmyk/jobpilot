@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: jobpilot
+    runtime: node
+    plan: free
+    buildCommand: ""
+    startCommand: node server.js
+    envVars:
+      - key: PUBLIC_MODE
+        value: "1"

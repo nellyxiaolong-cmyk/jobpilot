@@ -1,0 +1,12 @@
+{
+  "name": "jobpilot",
+  "private": true,
+  "version": "1.0.0",
+  "description": "JobPilot · 本地优先的求职与面试管理工具",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
