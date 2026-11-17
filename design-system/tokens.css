@@ -1,0 +1,13 @@
+:root {
+  --jp-primary: #4F46E5;
+  --jp-primary-soft: #EFEDFF;
+  --jp-ink: #09090B;
+  --jp-muted: #71717A;
+  --jp-border: #C7C4D8;
+  --jp-canvas: #FBF8FF;
+  --jp-card: #ffffff;
+  --jp-success: #10B981;
+  --jp-radius-card: 9px;
+  --jp-radius-control: 7px;
+  --jp-shadow-card: 0 12px 36px #211b5010;
+}
